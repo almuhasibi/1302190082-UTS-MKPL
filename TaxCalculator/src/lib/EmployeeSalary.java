@@ -29,6 +29,9 @@ public class EmployeeSalary extends Employee{
     }
  
     public void foreignerSalary(int monthSalary){  
+        if (!super.isForeigner()) {
+            monthSalary = (int) (monthSalary + (monthSalary * 0.5));
+        }
     }
 	
 	public void setAnnualDeductible(int deductible) { 

@@ -7,6 +7,7 @@ public class Family extends Employee {
 	private String spouseIdNumber;
     private List<String> childNames;
 	private List<String> TotalChildrens;
+    private String childName;
     
     public Family(Employee worker){
         super(worker.getFirstName(), worker.getLastName(), worker.getEmployeeId(), 
@@ -38,5 +39,25 @@ public class Family extends Employee {
 
     public List<String> getChildIdNumber(){
         return TotalChildrens;
+    }
+    public void Children(String childName, List<String> TotalChildrens) {
+        this.childName = childName;
+        this.TotalChildrens = TotalChildrens;
+    }
+
+    public String getChildName() {
+        return childName;
+    }
+
+    public void setChildName(String childName) {
+        this.childName = childName;
+    }
+
+    public List<String> getTotalChildrens() {
+        return TotalChildrens;
+    }
+
+    public void setTotalChildrens(List<String> TotalChildrens) {
+        this.TotalChildrens = TotalChildrens;
     }
 }
