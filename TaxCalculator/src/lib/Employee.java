@@ -9,10 +9,14 @@ public class Employee {
 	private String address;
 	private boolean isForeigner;
 
+
+
 	public  enum Gender { // Primitive Obsession Bad Smell convert to enumerasi 
 		laki_laki,
 		perempuan,
 	}
+
+
 	public Employee(
 			String employeeId,
 			String firstName,
@@ -40,31 +44,31 @@ public class Employee {
 	public Employee(boolean isForeigner) {
 		this.isForeigner = isForeigner;
 	}
-    public String getEmployeeId() { 
+    public String getEmployeeId() {  //Getter Employe ID
 		return employeeId;
 	}
 
-	public String getFirstName() { 
+	public String getFirstName() {  //Getter First Name
 		return firstName;
 	}
 
-	public String getLastName() { 
+	public String getLastName() { //Getter Last Name
 		return lastName;
 	}
 
-	public String getIdNumber() { 
+	public String getIdNumber() { //Getter ID
 		return idNumber;
 	}
 
-	public String getAddress() { 
+	public String getAddress() { //Getter Address
 		return address;
 	}
 
-	public boolean isForeigner() {
+	public boolean isForeigner() { // boolean
 		return isForeigner;
 	}
 
-	public String getForeigner() { 
+	public String getForeigner() {  // get foreigner
 		return null;
 	}
 }

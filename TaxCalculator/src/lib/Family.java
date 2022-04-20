@@ -45,19 +45,19 @@ public class Family extends Employee {
         this.TotalChildrens = TotalChildrens;
     }
 
-    public String getChildName() {
+    public String getChildName() { // get child name
         return childName;
     }
 
-    public void setChildName(String childName) {
+    public void setChildName(String childName) { //Set child name
         this.childName = childName;
     }
 
-    public List<String> getTotalChildrens() {
+    public List<String> getTotalChildrens() { // getter child
         return TotalChildrens;
     }
 
-    public void setTotalChildrens(List<String> TotalChildrens) {
+    public void setTotalChildrens(List<String> TotalChildrens) { // set total child
         this.TotalChildrens = TotalChildrens;
     }
 }
