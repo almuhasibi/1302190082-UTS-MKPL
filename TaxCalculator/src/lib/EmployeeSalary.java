@@ -8,7 +8,7 @@ public class EmployeeSalary extends Employee{
 
     public EmployeeSalary(Employee worker){
         super(worker.getFirstName(), worker.getLastName(), worker.getEmployeeId(), 
-        worker.getAddress(), worker.getForeigner(), worker.getGender());
+        worker.getAddress(), worker.getForeigner());
     }
 
     public void setmonthSalary(int grade) {	
